@@ -1,1 +1,1 @@
-ethereum
+const toolResponse = toolFunctions[name](args);
