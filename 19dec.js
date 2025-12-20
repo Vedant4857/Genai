@@ -47,7 +47,7 @@ const commandExecuter = {
 }
 
 const History = [];
-async function buildWebsite(query) {
+async function buildWebsite() {
 
   while(true){
     const result = await ai.models.generateContent({
@@ -77,9 +77,7 @@ async function buildWebsite(query) {
           8. fix the error if they are present at any step by writing updating and deleteing
           `,
           tools: [
-            {
-              functionDeclarations:[commandExecuter]
-            }
+            {functionDeclarations:[commandExecuter]}
           ]
          },
        });
@@ -136,3 +134,5 @@ while(true){
   })
   await buildWebsite();
 }
+
+
