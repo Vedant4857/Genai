@@ -45,7 +45,7 @@ async function chatting(question) {
 
   // console.log(searchResults);
 
-  // top10+question isko mein llm ko de dunga
+  // will give top 10 question to llm
 
   const promptTemplate = PromptTemplate.fromTemplate(`
 You are a helpful assistant answering questions based on the provided documentation.
@@ -78,7 +78,7 @@ Answer:
 
   console.log(answer);
 
-  // Output create kar dunga
+  // will create ouput
 }
 
 async function main() {
